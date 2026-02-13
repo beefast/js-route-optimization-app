@@ -68,6 +68,7 @@ router.post(
       const response = await fleetRouting.optimizeTours(body);
       return res.status(200).send(response);
     } catch (err: any) {
+      log.logger.error(JSON.stringify(err));
       log.logger.error(err);
 
       const message = (err as Error).message || "UNKNOWN_ERROR";
