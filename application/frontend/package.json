@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "demo": "npm install && ng serve -o",
-    "start": "ng serve --configuration dev",
+    "start": "ng serve --configuration dev --host 0.0.0.0 --port 4200",
     "build": "ng build",
     "test": "ng test",
     "test-coverage": "ng test --no-watch --code-coverage",
@@ -30,7 +30,7 @@
     "@deck.gl/core": "~8.6.8",
     "@deck.gl/google-maps": "~8.6.8",
     "@deck.gl/layers": "~8.6.8",
-    "@googlemaps/routeoptimization": "^0.4.1",
+    "@googlemaps/routeoptimization": "^0.6.0",
     "@ngrx/effects": "^17.2.0",
     "@ngrx/entity": "^17.2.0",
     "@ngrx/router-store": "^17.2.0",

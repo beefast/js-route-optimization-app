@@ -65,6 +65,7 @@ router.post(
     }
 
     try {
+      log.logger.debug(JSON.stringify(body));
       const response = await fleetRouting.optimizeTours(body);
       return res.status(200).send(response);
     } catch (err: any) {

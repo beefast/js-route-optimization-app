@@ -41,7 +41,7 @@ class FleetRoutingService {
     request: google.maps.routeoptimization.v1.IOptimizeToursRequest
   ): Promise<google.maps.routeoptimization.v1.IOptimizeToursResponse> {
     request.parent = this._parent;
-
+    log.logger.debug(request.toString());
     // `IOptimizeToursRequest` defines timeout as an `IDuraion` object
     // where `seconds` can be either a number or a string.
     // `CallOptions` expects timeout as a number in milliseconds.
@@ -53,6 +53,9 @@ class FleetRoutingService {
     if (typeof timeout === "number") {
       // convert to milliseconds
       timeout *= 1000;
+    } else {
+      // Default to 3 minutes if no timeout specified
+      timeout = 180000;
     }
     log.logger.debug(`gRPC timeout: ${timeout}ms`);
 
