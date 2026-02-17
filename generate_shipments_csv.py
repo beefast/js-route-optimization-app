@@ -33,7 +33,7 @@ def generate_random_coords(center_lat: float, center_lon: float, square_size_km:
     return round(lat, 8), round(lon, 8)
 
 
-def generate_random_time_window(start_hour: int = 6, end_hour: int = 22, window_duration_minutes: int = 60, fixed_hour: int = None, fixed_minute: int = 0) -> Tuple[str, str, str, str]:
+def generate_random_time_window(start_hour: int = 11, end_hour: int = 13, window_duration_minutes: int = 60, fixed_hour: int = None, fixed_minute: int = 0) -> Tuple[str, str, str, str]:
     """
     Generate a 1-hour delivery time window from minute 00 (e.g., 13:00 to 14:00).
     

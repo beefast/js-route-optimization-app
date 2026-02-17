@@ -1,0 +1,11 @@
+label,travelMode,startWaypoint,endWaypoint,unloadingPolicy,costPerHour,costPerTraveledHour,costPerKilometer,fixedCost,usedIfRouteIsEmpty,travelDurationMultiple,StartTimeWindowCostPerHourBeforeSoftStartTime,StartTimeWindowCostPerHourAfterSoftEndTime,startTimeWindowStartTime,startTimeWindowSoftStartTime,startTimeWindowEndTime,startTimeWindowSoftEndTime,EndTimeWindowCostPerHourBeforeSoftStartTime,EndTimeWindowCostPerHourAfterSoftEndTime,endTimeWindowStartTime,endTimeWindowSoftStartTime,endTimeWindowEndTime,endTimeWindowSoftEndTime,loadLimit1Type,loadLimit1Value,loadLimit2Type,loadLimit2Value,loadLimit3Type,loadLimit3Value,loadLimit4Type,loadLimit4Value
+Vehicle - 1,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 2,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 3,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 4,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 5,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 6,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 7,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 8,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 9,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
+Vehicle - 10,DRIVING,"44.5279615, 26.1798147","44.5279615, 26.1798147",UNLOADING_POLICY_UNSPECIFIED,0,0,0,0,FALSE,1,,,,,,,,,,,,,pallets,100,,,,,,
