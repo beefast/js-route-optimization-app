@@ -531,7 +531,7 @@ mat-button-toggle-group.main-toggle-group {
     }
 
     &.mat-button-toggle-checked {
-      background-color: #4285f4;
+      background-color: #fac000;
 
       .mat-button-toggle-label-content {
         color: white;
@@ -911,7 +911,7 @@ app-bulk-edit-unset {
 }
 
 .light-stroked-button {
-  border: 1px solid #4285f480 !important;
+  border: 1px solid #fac00080 !important;
   background: #fff !important;
 }
 
@@ -984,7 +984,7 @@ app-post-solve-map-legend .legend-panel mat-checkbox label .mat-checkbox-label {
 }
 
 .metric-box-value {
-  color: $blue;
+  color: $blue-dark;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;

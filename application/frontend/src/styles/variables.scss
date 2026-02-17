@@ -10,12 +10,12 @@ $custom-typography: mat.define-legacy-typography-config(
 );
 
 // Colors
-$blue: #4285f4;
-$blue-light: #7ab4f9;
-$blue-lighter: #d7e3f1;
-$blue-lightest: #f3f8ff;
-$blue-dark: #1a73e8;
-$blue-darker: #185abc;
+$blue: #fac000;
+$blue-light: lighten($blue, 24%);
+$blue-lighter: lighten($blue, 40%);
+$blue-lightest: lighten($blue, 56%);
+$blue-dark: darken($blue, 8%);
+$blue-darker: darken($blue, 18%);
 $green: #0f9d58;
 $red: #d7261b;
 $red-light: #ea4335;
@@ -40,28 +40,28 @@ $darker: rgba(0, 0, 0, 0.87);
 
 // Color maps to create palettes for the theme
 $blue-map: (
-  50: #e8f0fe,
-  100: #c6dafc,
-  200: #a1c2fa,
-  300: #7baaf7,
-  400: #5e97f6,
-  500: #4285f4,
-  600: #3c7df3,
-  700: #3372f1,
-  800: #2b68ef,
-  900: #1d55ec,
-  A100: #ffffff,
-  A200: #eef2ff,
-  A400: #bbcbff,
-  A700: #a1b8ff,
+  50: lighten($blue, 56%),
+  100: lighten($blue, 40%),
+  200: lighten($blue, 32%),
+  300: lighten($blue, 24%),
+  400: lighten($blue, 12%),
+  500: $blue,
+  600: darken($blue, 6%),
+  700: darken($blue, 12%),
+  800: darken($blue, 18%),
+  900: darken($blue, 24%),
+  A100: lighten($blue, 80%),
+  A200: lighten($blue, 48%),
+  A400: lighten($blue, 28%),
+  A700: darken($blue, 8%),
   contrast: (
     50: #000000,
     100: #000000,
     200: #000000,
     300: #000000,
     400: #000000,
-    500: #ffffff,
-    600: #ffffff,
+    500: #000000,
+    600: #000000,
     700: #ffffff,
     800: #ffffff,
     900: #ffffff,
