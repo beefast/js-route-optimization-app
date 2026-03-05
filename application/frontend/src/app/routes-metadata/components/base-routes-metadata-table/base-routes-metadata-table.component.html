@@ -64,6 +64,20 @@
       {{ item.totalDropoffs }}
     </td>
   </ng-container>
+  <ng-container matColumnDef="deliveriesPerHour">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Deliveries / hr</th>
+    <td mat-cell *matCellDef="let item">
+      {{ item.deliveriesPerHour | number:'1.1-1' }}
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="deliveriesPerHourDropoffWindow">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      Deliveries / hr (dropoff window)
+    </th>
+    <td mat-cell *matCellDef="let item">
+      {{ item.deliveriesPerHourDropoffWindow | number:'1.1-1' }}
+    </td>
+  </ng-container>
   <ng-container matColumnDef="traveledTime">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Route duration (hh:mm)</th>
     <td mat-cell *matCellDef="let item">

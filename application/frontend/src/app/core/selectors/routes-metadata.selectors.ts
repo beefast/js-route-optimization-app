@@ -111,7 +111,7 @@ const selectFiltersOptionById = (id: string) =>
     return filterOptions.find((fo) => fo.id === id);
   });
 
-const selectRouteMetadata = createSelector(
+export const selectRouteMetadata = createSelector(
   fromShipmentRoute.selectEntities,
   fromVehicle.selectEntities,
   fromVisit.selectEntities,
@@ -128,6 +128,26 @@ const selectRouteMetadata = createSelector(
       const traveledTime = durationSeconds(route.vehicleEndTime)
         .subtract(durationSeconds(route.vehicleStartTime))
         .toNumber();
+      const deliveriesPerHour = traveledTime > 0 ? totalDropoffs / (traveledTime / 3600) : 0;
+
+      // compute dropoff-window based on visit timestamps
+      let deliveriesPerHourDropoffWindow = 0;
+      if (totalDropoffs > 1) {
+        // collect startTimes for dropoffs (should be timestamps)
+        const dropoffTimes = routeVisits
+          .filter((v) => !v.isPickup && v.startTime)
+          .map((v) => durationSeconds(v.startTime));
+        if (dropoffTimes.length > 1) {
+          // manually compute min/max since typings don't include utility methods
+          const first = dropoffTimes.reduce((a, b) => (a.lessThan(b) ? a : b));
+          const last = dropoffTimes.reduce((a, b) => (a.greaterThan(b) ? a : b));
+          const windowSeconds = last.subtract(first).toNumber();
+          if (windowSeconds > 0) {
+            deliveriesPerHourDropoffWindow = totalDropoffs / (windowSeconds / 3600);
+          }
+        }
+      }
+
       return {
         capacityUtilization: calculateCapacityUtilizations(
           route,
@@ -144,6 +164,8 @@ const selectRouteMetadata = createSelector(
         totalShipments: new Set(routeVisits.map((visit) => visit.shipmentIndex)).size,
         traveledTime,
         traveledDistance: route.metrics?.travelDistanceMeters / 1000,
+        deliveriesPerHour,
+        deliveriesPerHourDropoffWindow,
       };
     })
 );

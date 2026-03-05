@@ -40,6 +40,8 @@ export class BasePostSolveMetricsComponent implements OnChanges {
   @Input() shipmentsCount: number;
   @Input() totalCost: number;
   @Input() totalDistance: number;
+  @Input() deliveriesPerHour?: number;
+  @Input() deliveriesPerHourDropoffWindow?: number;
   @Input() timezoneOffset = 0;
   @Input() vehicleTimeAverages: TimeSet;
   @Output() skippedShipmentsClick = new EventEmitter<void>();

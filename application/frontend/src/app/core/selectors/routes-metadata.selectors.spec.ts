@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import * as fromRoutesMetadata from '../reducers/routes-metadata.reducer';
-import { selectRoutesMetadataState } from './routes-metadata.selectors';
+import { selectRoutesMetadataState, selectRouteMetadata } from './routes-metadata.selectors';
 
 describe('RoutesMetadata Selectors', () => {
   it('should select the feature state', () => {
@@ -38,5 +38,40 @@ describe('RoutesMetadata Selectors', () => {
       selected: [],
       displayColumns: null,
     });
+  });
+
+  it('computes dropoff-window deliveries rate using visit timestamps', () => {
+    // set up minimal entities for a single route with two dropoffs one hour apart
+    const routes = {
+      1: {
+        id: 1,
+        visits: [1, 2],
+        vehicleStartTime: { seconds: 0 } as any,
+        vehicleEndTime: { seconds: 7200 } as any,
+        metrics: { travelDistanceMeters: 0 } as any,
+      },
+    } as any;
+
+    const vehicles = {
+      1: {
+        startWaypoint: { location: { latLng: {} } },
+        endWaypoint: { location: { latLng: {} } },
+        loadLimits: {},
+      } as any,
+    } as any;
+
+    const visits = {
+      1: { id: 1, shipmentIndex: 0, isPickup: false, startTime: { seconds: 0 } } as any,
+      2: { id: 2, shipmentIndex: 1, isPickup: false, startTime: { seconds: 3600 } } as any,
+    } as any;
+
+    const shipments = {} as any;
+    const selectedLookup = {} as any;
+
+    const metadata = selectRouteMetadata.projector(routes, vehicles, visits, shipments, selectedLookup);
+    expect(metadata.length).toBe(1);
+    const meta = metadata[0];
+    // two dropoffs spaced 1 hour apart => 2 per hour
+    expect(meta.deliveriesPerHourDropoffWindow).toBeCloseTo(2);
   });
 });

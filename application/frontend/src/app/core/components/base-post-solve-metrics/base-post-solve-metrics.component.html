@@ -16,6 +16,18 @@
       {{ totalDistance / 1000 | number: '1.1-1' }}
     </div>
   </div>
+  <div class="metric-box" *ngIf="deliveriesPerHour != null">
+    <div class="mb-1 metric-box-title">Deliveries / hr</div>
+    <div class="mb-0 metric-box-value">
+      {{ deliveriesPerHour | number:'1.1-1' }}
+    </div>
+  </div>
+  <div class="metric-box" *ngIf="deliveriesPerHourDropoffWindow != null">
+    <div class="mb-1 metric-box-title">Deliveries / hr (dropoff window)</div>
+    <div class="mb-0 metric-box-value">
+      {{ deliveriesPerHourDropoffWindow | number:'1.1-1' }}
+    </div>
+  </div>
   <button
     *ngIf="skippedShipmentsCount > 0; else noSkippedShipmentsCard"
     class="metric-box metric-box-warning"

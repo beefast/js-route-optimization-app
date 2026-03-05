@@ -42,6 +42,8 @@ class MockBasePostSolveMetricsComponent {
   @Input() skippedShipmentsCount: number;
   @Input() shipmentsCount: number;
   @Input() totalCost: number;
+  @Input() deliveriesPerHour: number;
+  @Input() deliveriesPerHourDropoffWindow: number;
   @Input() totalDistance: number;
   @Input() timezoneOffset = 0;
   @Input() vehicleTimeAverages: TimeSet;
@@ -61,6 +63,8 @@ describe('PostSolveMetricsComponent', () => {
           selectors: [
             { selector: fromDispatcher.selectSolutionTime, value: null },
             { selector: fromSolution.selectTotalCost, value: null },
+            { selector: fromSolution.selectTotalDeliveriesPerHour, value: null },
+            { selector: fromSolution.selectTotalDeliveriesPerHourDropoffWindow, value: null },
             { selector: ShipmentRouteSelectors.selectRoutesDuration, value: null },
             { selector: fromSolution.selectTotalRoutesDistanceMeters, value: null },
             { selector: fromPostSolveShipment.selectTotalSkippedShipments, value: null },

@@ -34,4 +34,11 @@ export interface RouteMetadata {
   totalShipments: number;
   traveledTime: number;
   traveledDistance: number;
+  deliveriesPerHour?: number; // computed as totalDropoffs / (traveledTime in hours)
+  /**
+   * Alternative rate computed using the duration between
+   * the first and last dropoff timestamps instead of the
+   * overall route duration.
+   */
+  deliveriesPerHourDropoffWindow?: number;
 }

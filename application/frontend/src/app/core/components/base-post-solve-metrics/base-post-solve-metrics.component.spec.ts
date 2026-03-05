@@ -49,4 +49,16 @@ describe('BasePostSolveMetricsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('displays delivery rates when provided', () => {
+    component.deliveriesPerHour = 3.5;
+    component.deliveriesPerHourDropoffWindow = 2.1;
+    fixture.detectChanges();
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).toContain('Deliveries / hr');
+    expect(compiled.textContent).toContain('3.5');
+    expect(compiled.textContent).toContain('dropoff window');
+    expect(compiled.textContent).toContain('2.1');
+  });
 });

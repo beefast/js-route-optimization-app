@@ -15,6 +15,8 @@ limitations under the License.
 */
 
 import { createSelector } from '@ngrx/store';
+import Long from 'long';
+import { durationSeconds } from 'src/app/util';
 import * as fromDispatcher from './dispatcher.selectors';
 
 export const selectHasSolution = createSelector(
@@ -51,3 +53,53 @@ export const selectTotalRoutesDistanceMeters = createSelector(selectRoutes, (rou
   );
   return totalDistanceMeters;
 });
+
+// compute deliveries per hour across all routes using vehicle start/end times
+export const selectTotalDeliveriesPerHour = createSelector(selectRoutes, (routes) => {
+  let totalDropoffs = 0;
+  let totalSeconds = 0;
+  routes.forEach((route) => {
+    if (!route.visits) {
+      return;
+    }
+    const drops = route.visits.filter((v) => !v.isPickup).length;
+    totalDropoffs += drops;
+    if (route.vehicleStartTime && route.vehicleEndTime) {
+      // duration may be IDuration or ITimestamp
+      const start = durationSeconds(route.vehicleStartTime);
+      const end = durationSeconds(route.vehicleEndTime);
+      totalSeconds += end.subtract(start).toNumber();
+    }
+  });
+  return totalSeconds > 0 ? totalDropoffs / (totalSeconds / 3600) : 0;
+});
+
+// compute deliveries per hour using the span between first and last dropoff of each route
+export const selectTotalDeliveriesPerHourDropoffWindow = createSelector(
+  selectRoutes,
+  (routes) => {
+    let totalDropoffs = 0;
+    let totalWindowSeconds = 0;
+    routes.forEach((route) => {
+      if (!route.visits) {
+        return;
+      }
+      const dropTimes: Long[] = [];
+      route.visits.forEach((v) => {
+        if (!v.isPickup && v.startTime) {
+          dropTimes.push(durationSeconds(v.startTime));
+        }
+      });
+      if (dropTimes.length > 1) {
+        const first = dropTimes.reduce((a, b) => (a.lessThan(b) ? a : b));
+        const last = dropTimes.reduce((a, b) => (a.greaterThan(b) ? a : b));
+        const windowSeconds = last.subtract(first).toNumber();
+        if (windowSeconds > 0) {
+          totalDropoffs += dropTimes.length;
+          totalWindowSeconds += windowSeconds;
+        }
+      }
+    });
+    return totalWindowSeconds > 0 ? totalDropoffs / (totalWindowSeconds / 3600) : 0;
+  }
+);

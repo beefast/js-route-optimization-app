@@ -84,6 +84,20 @@ export const routeMetadataColumns: RouteMetadataColumn[] = [
     selector: ({ totalDropoffs }) => totalDropoffs,
   },
   {
+    id: 'deliveriesPerHour',
+    label: 'Deliveries per hour',
+    active: true,
+    toggleable: true,
+    selector: ({ deliveriesPerHour }) => deliveriesPerHour,
+  },
+  {
+    id: 'deliveriesPerHourDropoffWindow',
+    label: 'Deliveries per hour (dropoff window)',
+    active: true,
+    toggleable: true,
+    selector: ({ deliveriesPerHourDropoffWindow }) => deliveriesPerHourDropoffWindow,
+  },
+  {
     id: 'traveledTime',
     label: 'Route duration',
     active: true,

@@ -42,6 +42,8 @@ export class PostSolveMetricsComponent implements OnInit {
   skippedShipmentsCount$: Observable<number>;
   shipmentsCount$: Observable<number>;
   totalCost$: Observable<number>;
+  deliveriesPerHour$: Observable<number>;
+  deliveriesPerHourDropoffWindow$: Observable<number>;
   timezoneOffset$: Observable<number>;
   timeline$: Observable<Timeline>;
   vehicleTimeAverages$: Observable<TimeSet>;
@@ -58,6 +60,10 @@ export class PostSolveMetricsComponent implements OnInit {
     );
     this.shipmentsCount$ = this.store.pipe(select(PreSolveShipmentSelectors.selectTotalRequested));
     this.totalCost$ = this.store.pipe(select(fromSolution.selectTotalCost));
+    this.deliveriesPerHour$ = this.store.pipe(select(fromSolution.selectTotalDeliveriesPerHour));
+    this.deliveriesPerHourDropoffWindow$ = this.store.pipe(
+      select(fromSolution.selectTotalDeliveriesPerHourDropoffWindow)
+    );
     this.timezoneOffset$ = this.store.pipe(select(fromConfig.selectTimezoneOffset));
 
     this.vehicleTimeAverages$ = this.store.pipe(
