@@ -85,7 +85,12 @@ def generate_shipments_csv(
     seed: int = None,
     pickup_hour: int = None,
     pickup_minute: int = 0,
-    curated_coords: List[Tuple[float, float]] = None
+    window_start_hour: int = 11,
+    window_end_hour: int = 13,
+    coords_method: str = 'random',
+    curated_coords: List[Tuple[float, float]] = None,
+    cluster_count: int = 3,
+    cluster_spread_km: float = 1.0,
 ) -> None:
     """
     Generate a shipments CSV file with random delivery locations and time windows.
@@ -103,6 +108,12 @@ def generate_shipments_csv(
         seed: Random seed for reproducibility
         pickup_hour: Fixed hour for all pickups (None = random per order)
         pickup_minute: Minute for fixed pickup time
+        window_start_hour: start of window hour (default 11)
+        window_end_hour: end of window hour (default 13; window is [start, end))
+        coords_method: Which coordinate strategy to use ('random', 'curated', 'cluster')
+        curated_coords: list of coords when using curated method (ignored otherwise)
+        cluster_count: number of cluster centers (used only for cluster method)
+        cluster_spread_km: spread size in km around each cluster center
         delivery_center_lat: Latitude of the delivery area center (default: 44.4268056)
         delivery_center_lon: Longitude of the delivery area center (default: 26.0999251)
     """
@@ -110,11 +121,24 @@ def generate_shipments_csv(
     if seed is not None:
         random.seed(seed)
 
-    # if curated coordinates were provided, shuffle for random selection without repetition
+    # prepare coordinate pool depending on the method
     coords_pool = None
-    if curated_coords:
+    if coords_method == 'curated':
+        if curated_coords is None:
+            raise ValueError('coords_method is curated but no curated_coords supplied')
         coords_pool = curated_coords.copy()
         random.shuffle(coords_pool)
+    elif coords_method == 'cluster':
+        # generate a predetermined list of clustered coordinates
+        coords_pool = generate_clustered_coords(
+            num_shipments,
+            delivery_center_lat,
+            delivery_center_lon,
+            square_size_km,
+            cluster_count,
+            cluster_spread_km,
+        )
+    # else coords_pool stays None and random points will be generated in loop
     
     # CSV headers
     headers = [
@@ -157,13 +181,18 @@ def generate_shipments_csv(
         # Determine delivery location
         if coords_pool is not None:
             if not coords_pool:
-                raise ValueError("Not enough curated coordinates to generate requested number of shipments")
+                raise ValueError("Coordinate pool exhausted before generating all shipments")
             delivery_lat, delivery_lon = coords_pool.pop()
         else:
             delivery_lat, delivery_lon = generate_random_coords(delivery_center_lat, delivery_center_lon, square_size_km)
         
         # Generate random time window (or fixed pickup time)
-        start_time, soft_start, end_time, soft_end = generate_random_time_window(fixed_hour=pickup_hour, fixed_minute=pickup_minute)
+        start_time, soft_start, end_time, soft_end = generate_random_time_window(
+            start_hour=window_start_hour,
+            end_hour=window_end_hour,
+            fixed_hour=pickup_hour,
+            fixed_minute=pickup_minute,
+        )
         
         # Generate random number of pallets
         num_pallets = random.randint(1, max_pallets)
@@ -212,6 +241,11 @@ def generate_shipments_csv(
     print(f"✓ Saved to: {output_path}")
     print(f"\nConfiguration:")
     print(f"  Depot: ({depot_lat}, {depot_lon})")
+    print(f"  Coord method: {coords_method}")
+    if coords_method == 'curated':
+        print(f"  Curated coords count: {len(curated_coords) if curated_coords else 0}")
+    elif coords_method == 'cluster':
+        print(f"  Clusters: {cluster_count}, spread {cluster_spread_km}km")
 
 
 def load_curated_coords(file_path: str) -> List[Tuple[float, float]]:
@@ -229,6 +263,49 @@ def load_curated_coords(file_path: str) -> List[Tuple[float, float]]:
     return coords
 
 
+def generate_clustered_coords(
+    num_points: int,
+    center_lat: float,
+    center_lon: float,
+    square_size_km: float,
+    num_clusters: int = 3,
+    cluster_spread_km: float = 1.0,
+) -> List[Tuple[float, float]]:
+    """Generate a specified number of points concentrated around a handful of cluster centers.
+
+    Clusters themselves are placed randomly within a square area centered at the
+    delivery center. Each generated point is uniformly placed within a small square
+    around its assigned cluster center (spread given in km).
+
+    Args:
+        num_points: total number of coordinates to produce
+        center_lat, center_lon: location of delivery area center used for sampling
+        square_size_km: bounding square size in kilometers for cluster centers
+        num_clusters: number of clusters to create
+        cluster_spread_km: size of the square (in km) around each cluster center
+            within which individual orders will be distributed.
+
+    Returns:
+        List of (lat, lon) tuples of length num_points.
+    """
+    # create cluster centers
+    clusters: List[Tuple[float, float]] = []
+    for _ in range(num_clusters):
+        clusters.append(generate_random_coords(center_lat, center_lon, square_size_km))
+
+    points: List[Tuple[float, float]] = []
+    for _ in range(num_points):
+        # pick a random cluster
+        clat, clon = random.choice(clusters)
+        # generate a point near the cluster center using smaller square
+        plat, plon = generate_random_coords(clat, clon, cluster_spread_km)
+        points.append((plat, plon))
+
+    # shuffle so sequential popping in the main loop yields random distribution
+    random.shuffle(points)
+    return points
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate shipments CSV with random or curated delivery coordinates")
     parser.add_argument('--output', '-o', required=True, help='Output CSV path')
@@ -242,13 +319,23 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--seed', type=int, help='Random seed')
     parser.add_argument('--pickup-hour', type=int, help='Fixed pickup hour (0-23)')
     parser.add_argument('--pickup-minute', type=int, default=0, help='Fixed pickup minute')
-    parser.add_argument('--coords-method', choices=['random', 'curated'], default='random',
-                        help='Coordinate generation method')
+    parser.add_argument('--window-start-hour', type=int, default=11,
+                        help='Minimum hour (included) for random delivery window start; default 11')
+    parser.add_argument('--window-end-hour', type=int, default=13,
+                        help='Maximum hour (excluded) for random delivery window start; default 13')
+    parser.add_argument('--coords-method', choices=['random', 'curated', 'cluster'], default='random',
+                        help='Coordinate generation method: random within square, curated from file, or cluster-based')
     parser.add_argument('--curated-file', help='Path to CSV file containing curated coordinates')
+    parser.add_argument('--cluster-count', type=int, default=3,
+                        help='Number of clusters when using cluster mode')
+    parser.add_argument('--cluster-spread-km', type=float, default=1.0,
+                        help='Spread radius (km) for each cluster in cluster mode')
     args = parser.parse_args()
 
     if args.coords_method == 'curated' and not args.curated_file:
         parser.error('coords-method curated requires --curated-file')
+
+    return args
 
     return args
 
@@ -274,7 +361,12 @@ def main():
         seed=args.seed,
         pickup_hour=args.pickup_hour,
         pickup_minute=args.pickup_minute,
-        curated_coords=curated_coords
+        window_start_hour=args.window_start_hour,
+        window_end_hour=args.window_end_hour,
+        coords_method=args.coords_method,
+        curated_coords=curated_coords,
+        cluster_count=args.cluster_count,
+        cluster_spread_km=args.cluster_spread_km,
     )
 
 
