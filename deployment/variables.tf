@@ -77,30 +77,25 @@ variable "iap_client_secret" {
 variable "image_repo_project" {
   type        = string
   description = "Google Cloud project ID hosting the Artifact Repository"
-  default     = "fleetrouting-app-ops"
+  default     = "beefast-exp-routing"
 }
 
 variable "image_repo_location" {
   type        = string
   description = "Location hosting the `image_repo`"
-  default     = "us"
+  default     = "europe-west1"
 }
 
 variable "image_repo_id" {
   type        = string
   description = "ID of the Artifact Registry repository"
-  default     = "fleetrouting-app"
+  default     = "beefast-exp-main-docker"
 }
 
 variable "image_repo_channel" {
   type        = string
   description = "Artifact Registry channnel sub-folder (`snapshot` or `release`)"
-  default     = "release"
-
-  validation {
-    condition     = contains(["snapshot", "release"], var.image_repo_channel)
-    error_message = "Image channel must be either `snapshot` or `release`."
-  }
+  default     = "routing-app"
 }
 
 variable "allow_experimental_features" {

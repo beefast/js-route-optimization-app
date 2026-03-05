@@ -1,7 +1,10 @@
 .PHONY: build push release
 
 build:
-	docker build -t $(REGISTRY):$(COMMIT_TAG) -f Dockerfile .
+	# make sure we build an amd64 image (Cloud Run requires linux/amd64)
+	# `docker build` on arm hosts produces an index that may lack amd64,
+	# so explicitly set the platform or use buildx.
+	docker build --platform linux/amd64 -t $(REGISTRY):$(COMMIT_TAG) -f Dockerfile .
 
 push:
 	docker push $(REGISTRY):$(COMMIT_TAG);

@@ -3,14 +3,10 @@ FROM node:22-alpine as build
 
 WORKDIR /usr/src/app
 
-COPY frontend/package.json ./package.tmp.json
-COPY frontend/package.exclude.json ./package.exclude.json
-# strip packages specific to lint and test
-RUN npm install -g json-merger && \
-  json-merger package.tmp.json package.exclude.json > package.json && \
-  rm package.tmp.json && \
-  rm package.exclude.json && \
-  npm install
+COPY frontend/package.json ./
+# install all dependencies (including devDependencies) so that the
+# Angular CLI (`ng`) is available for the build step.
+RUN npm install
 
 COPY frontend/ .
 ARG configuration=production

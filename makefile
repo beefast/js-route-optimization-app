@@ -1,7 +1,7 @@
 export SNAPSHOT_REGISTRY ?= us-docker.pkg.dev/fleetrouting-app-ops/fleetrouting-app/snapshot
 export RELEASE_REGISTRY ?= us-docker.pkg.dev/fleetrouting-app-ops/fleetrouting-app/release
-export REGISTRY ?= $(SNAPSHOT_REGISTRY)
-export COMMIT_TAG ?= fffffff
+export REGISTRY=europe-west1-docker.pkg.dev/beefast-exp-routing/beefast-exp-main-docker/routing-app
+export COMMIT_TAG ?= ffffff1
 export RELEASE_TAG  ?= 0.0.0
 
 application := application
