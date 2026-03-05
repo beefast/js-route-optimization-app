@@ -1,0 +1,5083 @@
+{
+  "model": {
+    "shipments": [
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.43937864006537,
+                  "longitude": 26.115917578373114
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 1",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41466187779653,
+                  "longitude": 26.190174809741023
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 2",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.512420875740474,
+                  "longitude": 26.01653893943225
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 3",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.46142707163679,
+                  "longitude": 26.19988915025212
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 4",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.46832593874518,
+                  "longitude": 26.033415599746263
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 5",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.410380599817785,
+                  "longitude": 26.064710260640283
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 6",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.47700430817966,
+                  "longitude": 26.036867151218246
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 7",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38234880605137,
+                  "longitude": 26.198699481618604
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 8",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.46515983304934,
+                  "longitude": 26.111314643368473
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 9",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.418684948415006,
+                  "longitude": 26.119326218255964
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 10",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38422950254238,
+                  "longitude": 26.105571205978805
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 11",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.54571117029181,
+                  "longitude": 26.134548823603637
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 12",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45758956438661,
+                  "longitude": 26.195302056066822
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 13",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41262995885424,
+                  "longitude": 26.200833396355677
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 14",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45901601875647,
+                  "longitude": 26.15553120733108
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 15",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.404117418625674,
+                  "longitude": 26.183840279316485
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 16",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41132201274064,
+                  "longitude": 26.11367348387253
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 17",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38290407227365,
+                  "longitude": 26.140110205473462
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 18",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.40176809563408,
+                  "longitude": 26.173721832689978
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 19",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41351578540676,
+                  "longitude": 26.196093610253115
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 20",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.44095663748948,
+                  "longitude": 26.21424380271668
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 21",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41704848433409,
+                  "longitude": 26.133027726274804
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 22",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38031390953128,
+                  "longitude": 26.10196892890616
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 23",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.492951019450004,
+                  "longitude": 26.172170694364723
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 24",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41033450204512,
+                  "longitude": 26.115821066957324
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 25",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41314720376769,
+                  "longitude": 26.10740487233224
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 26",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.37582562528115,
+                  "longitude": 26.159844387800376
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 27",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.473565063660544,
+                  "longitude": 26.16690162565874
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 28",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.47973513739703,
+                  "longitude": 26.154803961648526
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 29",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45708054094186,
+                  "longitude": 26.2311803064714
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 30",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.48689418780495,
+                  "longitude": 26.173714586973006
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 31",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45856285471069,
+                  "longitude": 26.221771800879537
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 32",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.40459449629907,
+                  "longitude": 26.217185820225723
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 33",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41536716672141,
+                  "longitude": 26.191196047975865
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 34",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.36088814272662,
+                  "longitude": 26.135900801586047
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 35",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.50967544911407,
+                  "longitude": 26.026122698741574
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 36",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.442852794476124,
+                  "longitude": 25.994197104810013
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 37",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.43921785582182,
+                  "longitude": 26.081039995027083
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 38",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.453556147359194,
+                  "longitude": 26.20250208126285
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 39",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.437792423792814,
+                  "longitude": 25.997347164257377
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 40",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42604134399505,
+                  "longitude": 26.132038768668252
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 41",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.527366745363,
+                  "longitude": 25.984220279841963
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 42",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42731769474855,
+                  "longitude": 26.136464052761056
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 43",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.466096390236686,
+                  "longitude": 26.1075610667952
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 44",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38610759014526,
+                  "longitude": 26.16303942364695
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 45",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.460802565379936,
+                  "longitude": 26.179596341231473
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 46",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.54913538866791,
+                  "longitude": 26.060392963108768
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 47",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.448071480253276,
+                  "longitude": 26.21704666068564
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 48",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.43321684646955,
+                  "longitude": 26.204069054966908
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 49",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.51028964957649,
+                  "longitude": 26.015015577549377
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 50",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38300897744685,
+                  "longitude": 26.168301958809963
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 51",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.37742367082197,
+                  "longitude": 26.15376870718225
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 52",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42453040489008,
+                  "longitude": 26.0392729136004
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 53",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.40273903057121,
+                  "longitude": 26.182798429590463
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 54",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.365755973065376,
+                  "longitude": 26.085738738851433
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 55",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.438330691959266,
+                  "longitude": 26.109903803803746
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 56",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42804677916311,
+                  "longitude": 26.19889323115578
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 57",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.52239288876598,
+                  "longitude": 25.984792634093054
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 58",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.40999097811587,
+                  "longitude": 26.13164457012772
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 59",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42672759393804,
+                  "longitude": 26.145853330536966
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 60",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38526611451212,
+                  "longitude": 26.13423021106712
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 61",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45342277067934,
+                  "longitude": 26.138701705880294
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 62",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.49687427498583,
+                  "longitude": 26.19542391062751
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 63",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.38058022921163,
+                  "longitude": 26.17367851365691
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 64",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.400129227250545,
+                  "longitude": 26.21752236233897
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 65",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.372105008976064,
+                  "longitude": 26.10095136434458
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 66",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.454010966788786,
+                  "longitude": 26.168398879632406
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 67",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42290485819311,
+                  "longitude": 26.166113715227823
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 68",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.512380239996645,
+                  "longitude": 26.132354558492125
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 69",
+        "loadDemands": {
+          "pallets": {
+            "amount": "6"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.400230280969765,
+                  "longitude": 26.178901139870675
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 70",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45677721174454,
+                  "longitude": 25.99178056138433
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 71",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.429407826952996,
+                  "longitude": 26.114412310206262
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 72",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.425626590519244,
+                  "longitude": 26.197907359952495
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 73",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.51053840280264,
+                  "longitude": 26.018503847929992
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 74",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.37081259124159,
+                  "longitude": 26.13353993010861
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 75",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.42033592115496,
+                  "longitude": 26.042106119289826
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 76",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.413794101734084,
+                  "longitude": 26.200610374393847
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 77",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.43605375042981,
+                  "longitude": 26.19796613772135
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 78",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.46751698913539,
+                  "longitude": 26.22161875784539
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 79",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.359515950484564,
+                  "longitude": 26.135500955462817
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 80",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.4051463030319,
+                  "longitude": 26.21544780926442
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 81",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.37861695033169,
+                  "longitude": 26.159579652503425
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 82",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.40016223003275,
+                  "longitude": 26.21593679730853
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 83",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.50879712061638,
+                  "longitude": 26.015643336047845
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 84",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.431559046822,
+                  "longitude": 26.028345460091316
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 85",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41496688039527,
+                  "longitude": 26.145945009093282
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 86",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.414618048110555,
+                  "longitude": 26.1931999569463
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 87",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45684688482331,
+                  "longitude": 25.987387093816153
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 88",
+        "loadDemands": {
+          "pallets": {
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41328055016646,
+                  "longitude": 26.192348977592758
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 89",
+        "loadDemands": {
+          "pallets": {
+            "amount": "7"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.49400583334804,
+                  "longitude": 26.024696582350828
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 90",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.54991711180904,
+                  "longitude": 26.08726451572781
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 91",
+        "loadDemands": {
+          "pallets": {
+            "amount": "5"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.41250758791341,
+                  "longitude": 26.154149541748296
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 92",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.421840255436166,
+                  "longitude": 26.12307789635608
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 93",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.37147285856929,
+                  "longitude": 26.174174821120744
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 94",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.46044376984585,
+                  "longitude": 26.15766484007068
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 95",
+        "loadDemands": {
+          "pallets": {
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.40122276620039,
+                  "longitude": 26.17971146743608
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 96",
+        "loadDemands": {
+          "pallets": {
+            "amount": "1"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.487670075636686,
+                  "longitude": 26.0433900027148
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 97",
+        "loadDemands": {
+          "pallets": {
+            "amount": "4"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.440258383965386,
+                  "longitude": 26.020680566970526
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T11:00:00.000Z",
+                "endTime": "2026-03-06T12:00:00.000Z",
+                "softStartTime": "2026-03-06T11:00:00.000Z",
+                "softEndTime": "2026-03-06T12:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 98",
+        "loadDemands": {
+          "pallets": {
+            "amount": "8"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.45826163027343,
+                  "longitude": 26.202805655100462
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 99",
+        "loadDemands": {
+          "pallets": {
+            "amount": "3"
+          }
+        }
+      },
+      {
+        "pickups": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.5279615,
+                  "longitude": 26.1798147
+                }
+              }
+            },
+            "duration": "0s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalWaypoint": {
+              "location": {
+                "latLng": {
+                  "latitude": 44.50052463693166,
+                  "longitude": 25.991585768659064
+                }
+              }
+            },
+            "timeWindows": [
+              {
+                "startTime": "2026-03-06T12:00:00.000Z",
+                "endTime": "2026-03-06T13:00:00.000Z",
+                "softStartTime": "2026-03-06T12:00:00.000Z",
+                "softEndTime": "2026-03-06T13:00:00.000Z",
+                "costPerHourBeforeSoftStartTime": 1000,
+                "costPerHourAfterSoftEndTime": 1000
+              }
+            ],
+            "duration": "600s"
+          }
+        ],
+        "penaltyCost": 200,
+        "label": "Order - 100",
+        "loadDemands": {
+          "pallets": {
+            "amount": "9"
+          }
+        }
+      }
+    ],
+    "vehicles": [
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 1",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 2",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 3",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 4",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 5",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 6",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 7",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 8",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 9",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 10",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 11",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 12",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 13",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 14",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      },
+      {
+        "travelMode": 1,
+        "startWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "endWaypoint": {
+          "location": {
+            "latLng": {
+              "latitude": 44.5279615,
+              "longitude": 26.1798147
+            }
+          }
+        },
+        "startTimeWindows": [
+          {}
+        ],
+        "endTimeWindows": [
+          {}
+        ],
+        "travelDurationMultiple": 1,
+        "unloadingPolicy": 0,
+        "costPerHour": 0,
+        "costPerTraveledHour": 0,
+        "costPerKilometer": 0,
+        "fixedCost": 0,
+        "usedIfRouteIsEmpty": false,
+        "label": "Vehicle - 15",
+        "loadLimits": {
+          "pallets": {
+            "maxLoad": "100"
+          }
+        }
+      }
+    ],
+    "globalStartTime": "2026-03-06T10:00:00.000Z",
+    "globalEndTime": "2026-03-06T14:00:00.000Z"
+  },
+  "searchMode": 1,
+  "considerRoadTraffic": false,
+  "label": ""
+}

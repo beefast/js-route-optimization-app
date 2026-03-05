@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Generate shipments CSV with random delivery coordinates in a square area.
+Generate shipments CSV with delivery coordinates.
 Supports configurable deposits, time windows, and load parameters.
+Coordinates may be generated randomly within a square area or sampled without repetition
+from a curated list of coordinates (CSV file).
 """
 
 import csv
@@ -82,7 +84,8 @@ def generate_shipments_csv(
     max_pallets: int = 10,
     seed: int = None,
     pickup_hour: int = None,
-    pickup_minute: int = 0
+    pickup_minute: int = 0,
+    curated_coords: List[Tuple[float, float]] = None
 ) -> None:
     """
     Generate a shipments CSV file with random delivery locations and time windows.
@@ -106,6 +109,12 @@ def generate_shipments_csv(
     
     if seed is not None:
         random.seed(seed)
+
+    # if curated coordinates were provided, shuffle for random selection without repetition
+    coords_pool = None
+    if curated_coords:
+        coords_pool = curated_coords.copy()
+        random.shuffle(coords_pool)
     
     # CSV headers
     headers = [
@@ -145,8 +154,13 @@ def generate_shipments_csv(
     
     # Generate shipments
     for i in range(num_shipments):
-        # Generate random delivery location around delivery center
-        delivery_lat, delivery_lon = generate_random_coords(delivery_center_lat, delivery_center_lon, square_size_km)
+        # Determine delivery location
+        if coords_pool is not None:
+            if not coords_pool:
+                raise ValueError("Not enough curated coordinates to generate requested number of shipments")
+            delivery_lat, delivery_lon = coords_pool.pop()
+        else:
+            delivery_lat, delivery_lon = generate_random_coords(delivery_center_lat, delivery_center_lon, square_size_km)
         
         # Generate random time window (or fixed pickup time)
         start_time, soft_start, end_time, soft_end = generate_random_time_window(fixed_hour=pickup_hour, fixed_minute=pickup_minute)
@@ -198,64 +212,71 @@ def generate_shipments_csv(
     print(f"✓ Saved to: {output_path}")
     print(f"\nConfiguration:")
     print(f"  Depot: ({depot_lat}, {depot_lon})")
-    print(f"  Square area: {square_size_km}km")
-    print(f"  Delivery duration: {delivery_duration_sec}s ({delivery_duration_sec//60}m)")
-    print(f"  Penalty cost: {penalty_cost}")
-    print(f"  Penalty per hour: {penalty_per_hour}")
-    print(f"  Max pallets: {max_pallets}")
-    print(f"  Delivery center: ({delivery_center_lat}, {delivery_center_lon})")
-    print(f"\nFirst 3 records:")
-    for row in rows[:3]:
-        print(f"  {row['label']}: ({row['deliveryArrivalWaypoint']}) @ {row['deliveryStartTime']} ({row['loadDemand1Value']} pallets)")
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Generate shipments CSV with random coordinates and time windows')
-    
-    parser.add_argument('-o', '--output', default='data/shipments_generated.csv',
-                        help='Output CSV file path (default: data/shipments_generated.csv)')
-    parser.add_argument('-n', '--num-shipments', type=int, default=20,
-                        help='Number of shipments to generate (default: 20)')
-    parser.add_argument('--depot-lat', type=float, default=44.5279615,
-                        help='Depot latitude (default: 44.5279615 - Bucharest)')
-    parser.add_argument('--depot-lon', type=float, default=26.1798147,
-                        help='Depot longitude (default: 26.1798147 - Bucharest)')
-    parser.add_argument('--square-size', type=float, default=20.0,
-                        help='Square area size in kilometers (default: 20.0)')
-    parser.add_argument('--delivery-duration', type=int, default=600,
-                        help='Delivery duration in seconds (default: 600 = 10 minutes)')
-    parser.add_argument('--penalty-cost', type=int, default=200,
-                        help='Penalty cost for missed time window (default: 200)')
-    parser.add_argument('--penalty-per-hour', type=int, default=1000,
-                        help='Cost per hour for early/late arrival (default: 1000)')
-    parser.add_argument('--max-pallets', type=int, default=10,
-                        help='Maximum number of pallets per shipment (default: 10)')
-    parser.add_argument('--seed', type=int, default=None,
-                        help='Random seed for reproducibility (default: None)')
-    parser.add_argument('--pickup-hour', type=int, default=None,
-                        help='Fixed hour for all pickups (None = random; e.g. 8 for 8 AM)')
-    parser.add_argument('--pickup-minute', type=int, default=0,
-                        help='Minute for fixed pickup time (default: 0)')
-    parser.add_argument('--delivery-center-lat', type=float, default=44.4268056,
-                        help='Delivery area center latitude (default: 44.4268056)')
-    parser.add_argument('--delivery-center-lon', type=float, default=26.0999251,
-                        help='Delivery area center longitude (default: 26.0999251)')
-    
+def load_curated_coords(file_path: str) -> List[Tuple[float, float]]:
+    """Load latitude/longitude pairs from a CSV file with headers 'latitude,longitude'."""
+    coords = []
+    with open(file_path, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            try:
+                lat = float(row['latitude'])
+                lon = float(row['longitude'])
+                coords.append((lat, lon))
+            except (KeyError, ValueError):
+                continue
+    return coords
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Generate shipments CSV with random or curated delivery coordinates")
+    parser.add_argument('--output', '-o', required=True, help='Output CSV path')
+    parser.add_argument('--count', '-n', type=int, default=20, help='Number of shipments')
+    parser.add_argument('--depot-lat', type=float, default=44.5279615)
+    parser.add_argument('--depot-lon', type=float, default=26.1798147)
+    parser.add_argument('--delivery-center-lat', type=float, default=44.4268056)
+    parser.add_argument('--delivery-center-lon', type=float, default=26.0999251)
+    parser.add_argument('--square-size-km', type=float, default=20.0)
+    parser.add_argument('--pallets', type=int, default=10, help='Maximum pallets per shipment')
+    parser.add_argument('--seed', type=int, help='Random seed')
+    parser.add_argument('--pickup-hour', type=int, help='Fixed pickup hour (0-23)')
+    parser.add_argument('--pickup-minute', type=int, default=0, help='Fixed pickup minute')
+    parser.add_argument('--coords-method', choices=['random', 'curated'], default='random',
+                        help='Coordinate generation method')
+    parser.add_argument('--curated-file', help='Path to CSV file containing curated coordinates')
     args = parser.parse_args()
-    
+
+    if args.coords_method == 'curated' and not args.curated_file:
+        parser.error('coords-method curated requires --curated-file')
+
+    return args
+
+
+def main():
+    args = parse_args()
+
+    curated_coords = None
+    if args.coords_method == 'curated':
+        curated_coords = load_curated_coords(args.curated_file)
+        if len(curated_coords) < args.count:
+            raise ValueError(f"Curated file contains only {len(curated_coords)} coords but {args.count} shipments requested")
+
     generate_shipments_csv(
         output_path=args.output,
-        num_shipments=args.num_shipments,
+        num_shipments=args.count,
         depot_lat=args.depot_lat,
         depot_lon=args.depot_lon,
         delivery_center_lat=args.delivery_center_lat,
         delivery_center_lon=args.delivery_center_lon,
-        square_size_km=args.square_size,
-        delivery_duration_sec=args.delivery_duration,
-        penalty_cost=args.penalty_cost,
-        penalty_per_hour=args.penalty_per_hour,
-        max_pallets=args.max_pallets,
+        square_size_km=args.square_size_km,
+        max_pallets=args.pallets,
         seed=args.seed,
         pickup_hour=args.pickup_hour,
-        pickup_minute=args.pickup_minute
+        pickup_minute=args.pickup_minute,
+        curated_coords=curated_coords
     )
+
+
+if __name__ == '__main__':
+    main()
