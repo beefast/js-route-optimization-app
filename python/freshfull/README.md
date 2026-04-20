@@ -1,10 +1,12 @@
 # Freshfull Route Optimization Pipeline
 
-Three scripts that transform the Freshfull Excel data into optimized routes and produce
-the required output format.
+Two scripts that bridge between the Freshfull Excel data and the Fleet Routing app.
 
 ```
-transform.py  →  request.json  →  run_api.py  →  response.json  →  to_output.py  →  rezultate.xlsx
+to_app_csvs.py                    from_app_json.py
+──────────────                    ────────────────
+Centralizator   →  shipments.csv  →  [App UI]  →  gmpro_*.zip  →  rezultate.xlsx
+    .xlsx        →  vehicles.csv
 ```
 
 ## Prerequisites
@@ -13,89 +15,88 @@ transform.py  →  request.json  →  run_api.py  →  response.json  →  to_ou
 pip install openpyxl
 ```
 
-Authentication:
-```bash
-gcloud auth login
-export PROJECT_ID=your-gcp-project-id
-export TOKEN=$(gcloud auth print-access-token)
-```
-
-## Step 1 — Build the API request
+## Step 1 — Generate import CSVs
 
 ```bash
-# Small sample (cheap, fast — use to validate the mapping)
-python -m python.freshfull.transform \
-    --input "/Users/marian/Documents/FreshFull/Centralizator 23-29 martie.xlsx" \
+# Small sample for cheap testing (50 orders, 20 vehicles)
+python -m python.freshfull.to_app_csvs \
+    --input "Centralizator 23-29 martie.xlsx" \
     --date 2026-03-23 \
-    --sample 50 \
-    --vehicles 20 \
-    --timeout 60 \
-    --output data/freshfull/request_sample.json
+    --sample 50 --vehicles 20 \
+    --outdir data/freshfull/sample/
 
 # Full day (~4 000 orders, all 167 vehicles)
-python -m python.freshfull.transform \
-    --input "/Users/marian/Documents/FreshFull/Centralizator 23-29 martie.xlsx" \
+python -m python.freshfull.to_app_csvs \
+    --input "Centralizator 23-29 martie.xlsx" \
     --date 2026-03-23 \
-    --high-quality \
-    --timeout 600 \
-    --output data/freshfull/request_2026-03-23.json
+    --outdir data/freshfull/2026-03-23/
 ```
 
-## Step 2 — Call the API
+Produces `shipments.csv` + `vehicles.csv` in the output directory.
+
+## Step 2 — Run optimization in the app
+
+1. Open the Fleet Routing app
+2. **Vehicles tab → Import CSV** → select `vehicles.csv`
+3. **Shipments tab → Import CSV** → select `shipments.csv`
+4. **Settings** → configure manually (not available in CSV):
+   - Break rule: earliest **11:00**, latest **16:00**, duration **1h**
+   - Search mode: **RETURN_HIGH_QUALITY**
+   - Timeout: **300s** (sample) / **600s** (full day)
+5. Click **Optimize**
+6. When done → **Download** (saves a `gmpro_*.zip`)
+
+## Step 3 — Convert to Rezultate Excel
 
 ```bash
-# Sample
-python -m python.freshfull.run_api \
-    --request data/freshfull/request_sample.json \
-    --output  data/freshfull/response_sample.json \
-    --project $PROJECT_ID \
-    --token   $TOKEN
+# From the downloaded ZIP
+python -m python.freshfull.from_app_json \
+    --zip  gmpro_20260323120000.zip \
+    --output data/freshfull/rezultate_2026-03-23.xlsx
 
-# Full day
-python -m python.freshfull.run_api \
-    --request data/freshfull/request_2026-03-23.json \
-    --output  data/freshfull/response_2026-03-23.json \
-    --project $PROJECT_ID \
-    --token   $TOKEN
+# Or from extracted JSON files
+python -m python.freshfull.from_app_json \
+    --scenario data/freshfull/scenario.json \
+    --solution data/freshfull/solution.json \
+    --output   data/freshfull/rezultate_2026-03-23.xlsx
 ```
 
-## Step 3 — Convert to output Excel
+## Requirements → CSV field mapping
 
-```bash
-python -m python.freshfull.to_output \
-    --request  data/freshfull/request_sample.json \
-    --response data/freshfull/response_sample.json \
-    --output   data/freshfull/rezultate_sample.xlsx
-```
-
-## Requirements → API parameter mapping
-
-| Requirement | API field | Notes |
-|---|---|---|
-| Customer time window (`IntervalClient`) | `shipment.deliveries[0].timeWindows` | Effective start = max(window, placement+125min) |
-| 7 min delivery time | `deliveries[0].duration = "420s"` | |
-| Order placement + 125 min prep | Shifts `timeWindows[0].startTime` forward | |
-| Capacity (ambient / chilled / frozen) | `shipment.loadDemands` | 4th dim: `ambient_chilled` for Iveco/Renault combined hold |
-| Iveco: 120-box combined hold | `vehicle.loadLimits.ambient_chilled.maxLoad=120` | |
-| Peugeot: 48 ambient + 39 chilled | `vehicle.loadLimits.ambient.maxLoad=48` + `chilled.maxLoad=39` | Separate compartments |
-| Renault: 144-box combined hold | `vehicle.loadLimits.ambient_chilled.maxLoad=144` | |
-| All vehicles: 14 frozen bags | `vehicle.loadLimits.frozen.maxLoad=14` | |
-| Zone 211/31/32 (Peugeot only) | `shipment.allowedVehicleIndices` → Peugeot indices | Parsed from `InfoTipMasinaLivrare` |
-| 28 loading docks | Staggered `vehicle.startTimeWindows` in batches of 28 | Each batch: 30-min exclusive slot |
-| Driver shift (10h default) | `vehicle.routeDurationLimit.maxDuration="36000s"` | |
-| 1h mandatory break | `vehicle.breakRule.breakRequests` | Window: 11:00–16:00 local |
-| Skip cost | `shipment.penaltyCost=10000` | High value → optimizer tries to serve all orders |
-
-## Tuning levers
-
-- **`--timeout`**: more time = better solution; 60s for samples, 600s for full day
-- **`--high-quality`**: enables `RETURN_HIGH_QUALITY` search mode (much better for production)
-- **`PENALTY_COST`** in `transform.py`: raise to force the optimizer to serve more orders at the cost of longer routes
-- **`FLEET[*].cost_fixed`** in `transform.py`: raise to force fewer vehicles (denser routes)
-- **`BREAK_EARLIEST_HOUR` / `BREAK_LATEST_HOUR`**: shift the break window
+| Freshfull requirement | Field in CSV |
+|---|---|
+| Customer time window (`IntervalClient`) | `deliveryStartTime` / `deliveryEndTime` |
+| 125 min prep time | `deliveryStartTime` = max(window start, placement + 125 min) |
+| 7 min delivery stop | `deliveryDuration = 420` |
+| Order skip penalty | `penaltyCost = 10 000` |
+| Customer location | `deliveryArrivalWaypoint = "lat, lon"` |
+| Zone 211/31/32 → Peugeot only | `allowedVehicleIndices` = Peugeot row indices |
+| 28 loading docks | Staggered `startTimeWindowStartTime` in batches of 28 (30-min slots) |
+| Shift end constraint | `endTimeWindowStartTime` / `endTimeWindowEndTime` per batch |
+| Iveco: 120-box combined hold | `loadLimit1Type=ambient_chilled`, `loadLimit1Value=120` |
+| Peugeot: 48 ambient + 39 chilled | `loadLimit1Type=ambient`, `loadLimit2Type=chilled` |
+| Renault: 144-box combined hold | `loadLimit1Type=ambient_chilled`, `loadLimit1Value=144` |
+| All: 14 frozen bags | `loadLimit2Type=frozen`, `loadLimit2Value=14` |
+| 4th load dim (cross-vehicle) | `loadDemand1Type=ambient_chilled` on shipments |
 
 ## Multi-day run (full week)
 
-Run Steps 1–3 for each date and concatenate the rezultate files, or adapt `to_output.py`
-to append to a single workbook. Between days, drivers on a 12h shift must be excluded
-from the next day's vehicle list (manual step until we automate it).
+Run Steps 1–3 for each date March 23–29. Between days, manually exclude from vehicles.csv
+any drivers who worked a 12h shift the previous day (legal rest requirement).
+
+## Output columns (Rezultate simulare.xlsx)
+
+| Column | Source |
+|---|---|
+| DataStartLivrare | Visit start time from solution |
+| DataEndLivrare | Visit start + 7 min |
+| Comanda | Order ID (shipment label) |
+| DataPlasareComanda | Not in scenario — enrich from original Excel if needed |
+| Sofer | Vehicle label (proxy for driver) |
+| IntervalClient | Delivery time window from scenario |
+| DataLivrareSolicitataClient | End of customer time window |
+| TipVehicul | Inferred from vehicle label prefix (IV/PG/RN) |
+| TipProgramSofer | Inferred from start/end window span |
+| Cursa | vehicle label + route start time |
+| DataStartCursa | vehicleStartTime from solution |
+| DataEndCursa | vehicleEndTime from solution |
